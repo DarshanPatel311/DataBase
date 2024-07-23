@@ -1,8 +1,7 @@
 # DataBase
 
-# Employee DBMS
 
-This repository contains a SQL script to manage an employee database. The database includes basic operations such as adding, updating, retrieving, and deleting employee records.
+
 
 
 
@@ -18,7 +17,7 @@ CREATE TABLE "Employ" (
 );
 ```
 
-## 1. Adding Employees (Create)
+## 1. Adding Employees 
 
 ### Add a New Employee
 
@@ -32,10 +31,10 @@ VALUES('Mehul',011255553,25000,'CEO');
 ```sql
 INSERT INTO Employ(name,phone,salery,role)
 VALUES('Mehul',011255553,25000,'CEO'),
-('Darshan Patel',011255553,125000,'faunder');
+('Darshan Patel',011255553,125000,'founder');
 ```
 
-## 2. Retrieving Employee Information (Read)
+## 2. Retrieving Employee Information
 
 ### All Employee Information
 
@@ -63,7 +62,7 @@ SELECT * FROM Employ WHERE role='CEO';SELECT * FROM Employ WHERE role='CEO';
 SELECT * FROM Employ WHERE salery >20000;
 ```
 
-## 3. Updating Employee Information (Update)
+## 3. Updating Employee Information
 
 ### Change Salary
 
@@ -73,7 +72,7 @@ UPDATE Employ SET salery = 1500 WHERE id=4;
 
 
 
-## 4. Deleting Employees (Delete)
+## 4. Deleting Employees
 
 ### Remove an Employee by ID
 
@@ -84,5 +83,5 @@ DELETE FROM Employ WHERE id=1;
 ### Delete Employees by Age
 
 ```sql
-DELETE FROM employees WHERE age < 18;
+DELETE FROM Employ WHERE age < 18;
 ```
