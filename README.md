@@ -5,7 +5,7 @@
 
 
 
-## Database Schema
+### Database Table
 
 ```sql
 CREATE TABLE "Employ" (
